@@ -2,7 +2,7 @@
 header("Content-Type: application/x-www-form-urlencoded; charset=UTF-8");
 
 //如果使用隐私模式，在这里填入你的API_KEY，如果使用公开模式则置空避免key被更改。
-$apikey = 'ur2521063-f92d6ed834678c823d94c389';
+$apikey = 'u2521063-832dfbc74bcb5fafc9055cb6';
 
 //json缓存目录，可自行配置
 $file_name = 'uptime.json';
