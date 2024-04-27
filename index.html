@@ -1,79 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="/favicon.ico">
-    <title>statuslive_vue</title>
-    <link href="/css/app.054e96de.css" rel="preload" as="style">
-    <link href="/css/chunk-vendors.62fd764a.css" rel="preload" as="style">
-    <link href="/js/app.6af66632.js" rel="preload" as="script">
-    <link href="/js/chunk-vendors.b6763fcf.js" rel="preload" as="script">
-    <link href="/css/chunk-vendors.62fd764a.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <link href="/css/app.054e96de.css" rel="stylesheet">
-    <!-- 引入VUE -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
-    <!-- 引入样式 -->
-    <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script>
-    <!-- 引入组件库 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css">
-</head>
-
-<body>
-    <script>
-        document.onkeydown = function () {
-            if (window.event && window.event.keyCode == 123) {
-                event.keyCode = 0;
-                event.returnValue = false;
-                new Vue({
-                    data: function () {
-                        this.$notify({
-                            title: "嘿！别瞎按",
-                            message: "坏孩子！",
-                            position: 'top-right',
-                            offset: 50,
-                            showClose: false,
-                            type: "error"
-                        });
-                        return { visible: false }
-                    }
-                })
-                return false;
-            }
-        };
-        document.oncontextmenu = function () {
-            new Vue({
-                data: function () {
-                    this.$notify({
-                        title: "嘿！没有右键菜单",
-                        message: "复制请用键盘快捷键",
-                        position: 'top-right',
-                        offset: 50,
-                        showClose: false,
-                        type: "warning"
-                    });
-                    return { visible: false }
-                }
-            })
-            return false;
-        }
-    </script>
-    <noscript>
-        <strong>We're sorry but statuslive_vue doesn't work properly without JavaScript enabled. Please enable it to
-            continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <script src="/js/chunk-vendors.b6763fcf.js"></script>
-    <script src="/js/app.6af66632.js"></script>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>statuslive_vue</title><link href="/css/app.054e96de.css" rel="preload" as="style"><link href="/css/chunk-vendors.62fd764a.css" rel="preload" as="style"><link href="/js/app.6af66632.js" rel="preload" as="script"><link href="/js/chunk-vendors.b6763fcf.js" rel="preload" as="script"><link href="/css/chunk-vendors.62fd764a.css" rel="stylesheet"><link href="/css/app.054e96de.css" rel="stylesheet">    <!-- 引入VUE --></head><body><noscript><strong>We're sorry but statuslive_vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.b6763fcf.js"></script><script src="/js/app.6af66632.js"></script>
 </body>
-<footer>
+<foote>
     <div class="footer">
         <p style="text-align: center;">Copyright © 2023 ~ 2024. MeowLoli</p>
     </div>
     <script charset="UTF-8" src="https://blog.aloli.icu/js/showfps.js"></script>
 </footer>
-
 </html>
